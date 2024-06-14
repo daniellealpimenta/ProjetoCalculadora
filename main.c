@@ -1,14 +1,17 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+#include "calculadora.h"
+#include "calculadora.c"
+
+
 int main() {
-
-char posFixa[] = "53 23 + 8 2 - *";
-
-// Convertendo para a forma infixa
-
-char *inFixa = getFormaInFixa(posFixa);
-// Calculando o valor da expressão
-
-float valor = getValor(posFixa);
-
+// Exemplo de expressão em notação pós-fixada: “2 4 + 5 *“
+const char *expressao = "7 2 * 4 +";
+double resultado = avaliarExpressaoPosfixada(expressao);
+printf("Resultado: %f\n", resultado);
 return 0;
 }
+
+
 
