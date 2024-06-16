@@ -12,6 +12,3 @@ double resultado = avaliarExpressaoPosfixada(expressao);
 printf("Resultado: %f\n", resultado);
 return 0;
 }
-
-
-
